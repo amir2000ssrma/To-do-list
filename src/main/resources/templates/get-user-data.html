@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Get User Data Page</title>
+
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="webjars/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- bootstrap and jquery js files -->
+    <script src="webjars/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="webjars/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="container mx-auto">
+
+    <form action="display" method="post">
+        <table class="table-bordered">
+            <tr>
+                <td> <label >User Name</label></td>
+                <td> <input  type="text" name="name" > </td>
+            </tr>
+            <tr>
+                <td> <label> PassWord</label></td>
+                <td> <input type="password" name="password" > </td>
+            </tr>
+            <tr>
+                <td> <label> Email</label></td>
+                <td> <input type="email" name="email" > </td>
+            </tr>
+        </table>
+        <button type="submit" class="btn btn-primary">Send it!</button>
+
+    </form>
+
+</div>
+</body>
+</html>

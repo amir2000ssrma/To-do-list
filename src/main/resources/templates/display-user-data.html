@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Display User Data</title>
+
+    <!-- bootstrap css file -->
+    <link rel="stylesheet" href="webjars/bootstrap/5.3.0/css/bootstrap.min.css">
+
+    <!-- bootstrap and jquery js files -->
+    <script src="webjars/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="webjars/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="mx-auto">
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th> Name </th>
+            <th> Password</th>
+            <th> Email</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="table-danger">
+            <td th:text="${user.name}">  </td>
+            <td th:text="${user.password}"> </td>
+            <td th:text="${user.email}"> </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
